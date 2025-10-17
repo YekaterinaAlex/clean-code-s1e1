@@ -46,13 +46,10 @@
 .section__title {
   list-style: none;
 }
-input,
-button {
-  outline: none;
-}
 .add-button,
 .delete-button,
 .edit-button {
+  outline: none;
   background: none;
   border: 0px;
   color: #888;
@@ -77,6 +74,7 @@ button {
   text-transform: uppercase;
 }
 input[type="text"] {
+  outline: none;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
