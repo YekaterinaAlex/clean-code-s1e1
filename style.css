@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -52,7 +52,7 @@ button {
 }
 .add-button,
 .delete-button,
-button {
+.edit-button {
   background: none;
   border: 0px;
   color: #888;
@@ -62,7 +62,8 @@ button {
   cursor: pointer;
 }
 .add-button:hover,
-button:hover {
+.delete-button:hover,
+.edit-button:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -139,15 +140,17 @@ input[type="text"]:focus {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.list__item [type=text] {
   display: none;
 }
-
-.list__item_editMode input[type=text] {
+.list__item input[type=text] {
+  display: none;
+}
+.list__item.editMode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.list__item_editMode label {
+.list__item.editMode label {
   display: none;
 }
